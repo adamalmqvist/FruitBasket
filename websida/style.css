@@ -1,29 +1,28 @@
-* {
+* { /* styling för hela documentet, här anger jag bakgrundsfärn, font family samt lite startkod för att det ska bli snyggt i alla browsers. */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #3DBA65;
     font-family: Arial, Helvetica, sans-serif;
 }
-.header {
+
+.header { /* lägger till en vit bakgrund i min header där loggan är */
     background-color: white;
    
 }
-.navbar {
-   overflow: hidden;
-    background-color: white;
-}
-
-#companyLogo {
+#companyLogo { /* styling för loggan vill att loggan alltid ska vara i mitten samt anger även storleken här. */
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
   }
 
-a {
+  .navbar { /* lägger till backgrund där min navigering finns använder overflow för att vill ha vit backgrund och gröna navigering knappar */
+    overflow: hidden;
+    background-color: white;
+}
+a { /* styling för mina länkar */
     float: left;
-    display: inline;
     text-decoration: none;
     margin: 5px;
     padding: 10px;
@@ -33,6 +32,25 @@ a {
     margin-left: 25px;
     
 }
-a:hover {
+a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över en av länkarna*/
+    background-color:  #54FF8A;
+}
+#active { /* lägger in en bakgrundsfärg så man enkelt kan se vilken sida man är på*/
     background-color: #54FF8A;
+}
+@media only screen and (min-width: 768px) { /* gör här loggan lite mindre när man använder en större skärm */
+    #companyLogo{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 325px) { /* lägger in lite margin left här för att navigeringen ska vara i mitten även vid större skärmar */
+    a {
+        margin-left: 55px;
+
+    }
+}
+@media only screen and (min-width: 800px) {
+    a {
+        margin-left: 90px;
+    }
 }
