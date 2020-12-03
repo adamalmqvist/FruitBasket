@@ -9,7 +9,6 @@
 
 .header { /* lägger till en vit bakgrund i min header där loggan är */
     background-color: white;
-   
 }
 #companyLogo { /* styling för loggan vill att loggan alltid ska vara i mitten samt anger även storleken här. */
     display: block;
@@ -24,19 +23,22 @@
     text-align: center;
 }
 
-.navbar { /* lägger till backgrund där min navigering finns använder overflow för att vill ha vit backgrund och gröna navigering knappar */
+
+.navbar { /* lägger till backgrund där min navigering finns använder overflow för att vill ha vit backgrund och gröna navigering knappar gör även navbar till grid för att få den responsiv */
     overflow: hidden;
     background-color: white;
+    display: grid;
+    justify-items: center;
 }
 a { /* styling för mina länkar */
-    float: left;
+   float: left;
     text-decoration: none;
     margin: 5px;
     padding: 10px;
     width: 120px;
     text-align: center;
     color: black;
-    margin-left: 25px;
+   
     
 }
 a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över en av länkarna*/
@@ -47,13 +49,11 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
 }
 
 
-.carouselContainer { 
-    position: relative;
-    margin: auto;
-    margin-left: 20%;
-  }
+
 .slide { /*sätter display till none så inte alla bilder syns samtidigt i min slide  */
     display: none;
+    text-align: center;
+    
 }
 .slideImg { /* sätter width på mina bilder i sliden */
     width: 60vw;
@@ -74,25 +74,46 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
     from {opacity: .4}
     to {opacity: 1}
   }
+
+
+.flexContainer { /*css kod för min flexbox på sida 2 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+.flexItem {
+      margin: 20px;
+      border: 2px solid #54FF8A;
+  }
+.flexImg {
+    height: 200px;
+    width: auto;
+}
+
+
+@media only screen and (min-width: 425px) {
+    .navbar { /* gör navbaren responsiv genom att göra den till en grid och ändra beroende på skärmstorlek.*/
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+    }
+}
+@media only screen and (min-width: 550px) {
+    .slideImg { /* sätter width på mina bilder i sliden */
+        width: 50vw;
+    }
+}
+
 @media only screen and (min-width: 768px) { /* gör här loggan lite mindre när man använder en större skärm */
     #companyLogo{
         width: 40%;
     }
-}
-@media only screen and (min-width: 325px) { /* lägger in lite margin left här för att navigeringen ska vara i mitten även vid större skärmar */
-    a {
-        margin-left: 55px;
-
+    .flexContainer {
+    flex-direction: row;
     }
 }
-@media only screen and (min-width: 800px) {
-    a {
-        margin-left: 100px;
-    }
+@media only screen and (min-width: 1024px) {
     .slideImg { /* sätter width på mina bilder i sliden */
-        width: 40vw;
-    }
-    .carouselContainer {
-        margin-left: 30%;
+        width: 30vw;
     }
 }
