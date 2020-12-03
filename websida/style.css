@@ -6,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .header { /* lägger till en vit bakgrund i min header där loggan är */
     background-color: white;
    
@@ -17,7 +18,13 @@
     width: 70%;
   }
 
-  .navbar { /* lägger till backgrund där min navigering finns använder overflow för att vill ha vit backgrund och gröna navigering knappar */
+
+#sida1P {
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar { /* lägger till backgrund där min navigering finns använder overflow för att vill ha vit backgrund och gröna navigering knappar */
     overflow: hidden;
     background-color: white;
 }
@@ -38,6 +45,35 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
 #active { /* lägger in en bakgrundsfärg så man enkelt kan se vilken sida man är på*/
     background-color: #54FF8A;
 }
+
+
+.carouselContainer { 
+    position: relative;
+    margin: auto;
+    margin-left: 20%;
+  }
+.slide { /*sätter display till none så inte alla bilder syns samtidigt i min slide  */
+    display: none;
+}
+.slideImg { /* sätter width på mina bilder i sliden */
+    width: 60vw;
+}
+.fadeAnimation { /* kod för animationen till min slide */
+    -webkit-animation-name: fadeAnimation;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeAnimation;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fadeAnimation {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeAnimation {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 @media only screen and (min-width: 768px) { /* gör här loggan lite mindre när man använder en större skärm */
     #companyLogo{
         width: 40%;
@@ -51,6 +87,12 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
 }
 @media only screen and (min-width: 800px) {
     a {
-        margin-left: 90px;
+        margin-left: 100px;
+    }
+    .slideImg { /* sätter width på mina bilder i sliden */
+        width: 40vw;
+    }
+    .carouselContainer {
+        margin-left: 30%;
     }
 }
