@@ -12,4 +12,4 @@ var slideNum = 0;
           slides[slideNum-1].style.display = "block"; //ändrar display till block så bilden syns
           setTimeout(showSlide, 2500); //kör om funktionen när 2.5 sekunder gått.
         }
-        
+

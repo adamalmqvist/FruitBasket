@@ -7,6 +7,11 @@
     <title>fruitbasket</title>
 </head>
 <body>
+    <div class="cartIcon">
+        <img class="cartImg" src="image\buy_cart_ecommerce_shopping_online_store-512.png" alt="cart">
+        <p id="cartSum"></p>
+        <p id="cartNum"></p>
+    </div>
    
     <div class="header">
         <img id="companyLogo" src="image/fruits-01svart2.jpg" alt="Company logo">
@@ -19,22 +24,25 @@
     </div>
     
     <main>
+        
         <div class="flexContainer">
             <div class="flexItem">
                 <img class="flexImg" src="image/fruktkorg1.jpg" alt="fruits">
-                <p>Small</p>
+                <p>Small 100kr</p>
+                <button class="cartBtn" onclick="addSmall()">Add To Cart</button>
             </div>
             <div class="flexItem">
                 <img class="flexImg" src="image/fruktkorg2.jpg" alt="fruits">
-                <p>Medium</p>
+                <p>Medium 150kr</p>
+                <button class="cartBtn" onclick="addMedium()">Add To Cart</button>
             </div>
             <div class="flexItem">
                 <img class="flexImg" src="image/fruktkorg3.jpg" alt="fruits">
-                <p>Large</p>
+                <p>Large 200kr</p>
+                <button class="cartBtn" onclick="addLarge()">Add To Cart</button>
             </div>
-    
         </div>
     </main>
-    
+    <script src="js\main2.js"> </script>
 </body>
 </html>
