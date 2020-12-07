@@ -1,4 +1,4 @@
-var cartSum = 0;
+var cartSum = 0; 
 var cartNum = 0;
 
 function addSmall() {
