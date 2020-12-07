@@ -91,7 +91,7 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
     width: auto;
 }
 
-.cartIcon {
+.cartIcon { /*css styling för min varukorg vill att den ska följa med när man scrollar därför har jag satt fixed */
     position: fixed;
     margin: 5px;
     padding: 5px;
