@@ -17,7 +17,7 @@ function addLarge() {
   display();
 }
 function display(){ //funktion för att displaya hur många saker som finns i varukorger samt totala summan 
-document.getElementById("cartSum").innerHTML = cartSum + " st"; //genom dom träder snappar jag upp paragrafen med id Cartsum och displayar cartSum
+document.getElementById("cartSum").innerHTML = cartSum ; //genom dom träder snappar jag upp paragrafen med id Cartsum och displayar cartSum
 document.getElementById("cartNum").innerHTML = cartNum + " kr";
 }
 

@@ -95,9 +95,10 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
     position: fixed;
     margin: 5px;
     padding: 5px;
+    margin-top: 60px;
 }
 .cartImg {
-    width: 30px;
+    width: 20px;
     float: left;
 }
 .cartBtn {
@@ -105,7 +106,19 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
     padding: 3px;
     border: 1px solid #54FF8A;
 }
-
+#message { /* gör att texxtarea på sida 3 inte går att resize*/
+    resize: none;
+}
+.gridsida2 { /* gör meddelandeboxen och dem två bilderna till en grid*/
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.gridImg {
+    width: 70vw;
+    height: auto;
+   margin: 5px;
+}
 @media only screen and (min-width: 425px) {
     .navbar { /* gör navbaren responsiv genom att göra den till en grid och ändra beroende på skärmstorlek.*/
         grid-template-columns: auto auto auto;
@@ -125,6 +138,13 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
     .flexContainer {
     flex-direction: row;
     }
+    .gridsida2 {
+    grid-template-columns: auto auto auto;
+    }
+    .gridImg {
+        width: 30vw;
+    }
+    
 }
 @media only screen and (min-width: 1024px) {
     .slideImg { /* sätter width på mina bilder i sliden */
