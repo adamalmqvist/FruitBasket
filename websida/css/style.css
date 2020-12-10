@@ -106,7 +106,7 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
     padding: 3px;
     border: 1px solid #54FF8A;
 }
-#message { /* gör att texxtarea på sida 3 inte går att resize*/
+#messageText { /* gör att texxtarea på sida 3 inte går att resize*/
     resize: none;
 }
 .gridsida2 { /* gör meddelandeboxen och dem två bilderna till en grid*/
@@ -118,6 +118,14 @@ a:hover { /* lägger in en backgrundsfärg när användaren har muspekaren över
     width: 70vw;
     height: auto;
    margin: 5px;
+}
+#userFeedback {
+    color: red;
+    background-color: white;
+}
+#messageSent {
+    color: green;
+    background-color: white;
 }
 @media only screen and (min-width: 425px) {
     .navbar { /* gör navbaren responsiv genom att göra den till en grid och ändra beroende på skärmstorlek.*/

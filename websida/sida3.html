@@ -23,12 +23,15 @@
        <div class="gridsida2">
         <div class="messageContainer">
             <h3>Send us a message</h3>
+            <p id="userFeedback"></p>
+            <p id="messageSent"></p>
             <form id="message">
                 <label for="email">Enter your email:</label>
                 <input type="email" id="email" name="email">
             </form>
-            <textarea name="message" id="message" form="message" cols="40" rows="10">Enter your message...</textarea>
-            <input type="submit">
+            <label for="messageText">Enter your message:</label>
+            <textarea name="messageText" id="messageText" form="message" cols="40" rows="7"></textarea>
+            <input type="submit" form="message">
         </div>
 
         <div class="gridItem2">
@@ -41,6 +44,7 @@
 
         </div>
     </main>
+    <script src="js\sida3.js"> </script>
     
 </body>
 </html>
